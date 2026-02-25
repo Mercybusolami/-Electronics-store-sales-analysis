@@ -4,27 +4,25 @@ Excel + Power BI Project | Global+ Electronics+ Retailers From raw data to Busin
 Table of contents
 
 * [Project Overview](*project-overview)
-* [Tools & Technology](*tools--technology)
+* [Tools & Technologies](*tools--technology)
 * [Dataset overview](*dataset-overview)
-* [Sample preview of sales table](*sample-preview-of-sales-table)
 * [Data cleaning Process](*data-cleaning-process)
-* [Data Modelling](*data-modelling)
-* [Powerbi DAX](*power-bi-dax)
-* [Power BI Dashboard](*power-bi-dashboard)
+* [Data modelling](*data-modelling)
+* [Powerbi measures](*power-measures)
+* [Power bi Dashboard](*power-bi-dashboard)
 * [Key insight](*key-insight)
 * [Recommendation](*recommendation)
-* [Data source](*data-source)
 
 ### Project overview
 This project analyze global electronics retail stores data to uncover trends in revenue, Year over Year comparison, product performance customer insights, store and regional performance. 
 Using Excel for data cleaning, Using SQL for data exploratory  power bi for data modelling and visualization, the project turn raw transaction records into actionable business insight.
 
-### Tools and Technologies
+### Tools & Technologies
 * Excel
 * Data modelling
 * Power bi
 
-### Dataset Overview
+### Dataset overview
 The dataset consists of multiple related tables Model into one
 * Sales: Contains transactional data including orders, delivery dates, quantities,
 currency, and links to customers, stores, and products.
@@ -53,6 +51,7 @@ preform in Excel ,Data modelling and power BI:
 Table sequence(Using each similar columns in each table to merge to other table)
 Customers (Birthdate) + Exchange rate (Date)+ product (Deliverydate) + sales (Productkey)+ store (Storekey)+ Calender date.
 
+### Powerbi measures
 ```(Power BI dax)
 SELECT*
 FROM SALES ,Profit Margin = DIVIDE([Total Profit],[Revenue])
@@ -73,7 +72,7 @@ VAR PER_ = DIVIDE(CY_ - PY_, PY_)
 VAR FORMAT_ = SWITCH(TRUE(),CY_> 0,  "green", CY_ < 0 ,"Red", "Grey")
 RETURN FORMAT_
 ```
-### Power BI Dashboard
+### Power bi dashboard
 This dashboard include the following visuals 
 - Revenue and profit overtime overtime
 - Profit and Revenue by category
@@ -88,7 +87,7 @@ This dashboard include the following visuals
 <img width="1183" height="673" alt="Screenshot 2025-10-14 175623" src="https://github.com/user-attachments/assets/8f5d00d9-6778-4e10-83b1-909b92af0ccd" />
 
 
-### Key Insights
+### Key insights
 1.Maven Electronics generated $34.6M revenue and $20.25M profit with +2.2% YoY growth, indicating strong profitability and early recovery after the 2020 decline.
 2.Computers, Desktops, and Televisions dominate sales and profit, showing heavy revenue concentration in a few core product categories.
 3.Adventure Works contributes $11.8M revenue, revealing reliance on a single leading brand.
