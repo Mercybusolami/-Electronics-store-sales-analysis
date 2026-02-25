@@ -11,9 +11,9 @@ Table of contents
 * [Data Modelling](*data-modelling)
 * [Powerbi DAX](*power-bi-dax)
 * [Power BI Dashboard](*power-bi-dashboard)
-* [Key insight](key-insight)
-* [Recommendation](recommendation)
-* [Data source](data-source)
+* [Key insight](*key-insight)
+* [Recommendation](*recommendation)
+* [Data source](*data-source)
 
 ### Project overview
 This project analyze global electronics retail stores data to uncover trends in revenue, Year over Year comparison, product performance customer insights, store and regional performance. 
@@ -53,7 +53,7 @@ preform in Excel ,Data modelling and power BI:
 Table sequence(Using each similar columns in each table to merge to other table)
 Customers (Birthdate) + Exchange rate (Date)+ product (Deliverydate) + sales (Productkey)+ store (Storekey)+ Calender date.
 
-```(POWER BI DAX)
+```(Power BI dax)
 SELECT*
 FROM SALES ,Profit Margin = DIVIDE([Total Profit],[Revenue])
 ```
@@ -65,7 +65,7 @@ VAR PER_ = DIVIDE(CY_ - PY_, PY_)
 VAR FORMAT_ = SWITCH(TRUE(),CY_> 0, UNICHAR(11165) & " " & FORMAT(PER_, "0.0%"), UNICHAR(11167) & " " & FORMAT(PER_,"0.0%"))
 RETURN FORMAT_ 
 ```
-```(Power bi DAX)
+```(Power BI dax)
 SELECT *
 FROM SALES ,Unit sold color = VAR CY_ = [unit sold]
 VAR PY_ = [Unit sold LY]
