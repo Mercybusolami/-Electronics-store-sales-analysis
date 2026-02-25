@@ -5,12 +5,12 @@ Table of contents
 
 * [Project Overview](*project-overview)
 * [Tools & Technologies](*tools--technology)
-* [Dataset overview](*dataset-overview)
-* [Data cleaning Process](*data-cleaning-process)
-* [Data modelling](*data-modelling)
-* [Powerbi measures](*power-measures)
-* [Power bi Dashboard](*power-bi-dashboard)
-* [Key insight](*key-insight)
+* [Dataset Overview](*dataset-overview)
+* [Data Cleaning Process](*data-cleaning-process)
+* [Data Modelling](*data-modelling)
+* [Powerbi Measures](*power-measures)
+* [Powerbi Dashboard](*powerbi-dashboard)
+* [Key Insight](*key-insight)
 * [Recommendation](*recommendation)
 
 ### Project overview
@@ -22,7 +22,7 @@ Using Excel for data cleaning, Using SQL for data exploratory  power bi for data
 * Data modelling
 * Power bi
 
-### Dataset overview
+### Dataset Overview
 The dataset consists of multiple related tables Model into one
 * Sales: Contains transactional data including orders, delivery dates, quantities,
 currency, and links to customers, stores, and products.
@@ -38,7 +38,7 @@ currency to ensure consistent reporting in USD.
 Sample preview of the sales table
 <img width="1090" height="649" alt="Screenshot 2026-02-25 044716" src="https://github.com/user-attachments/assets/9f0b40f6-274a-4436-9468-834959dd1b1d" />
 
-### Data cleaning Process
+### Data Cleaning Process
 preform in Excel ,Data modelling and power BI:
 * Converted date to proper datetime format
 * Removed missing or invalid values 
@@ -47,11 +47,11 @@ preform in Excel ,Data modelling and power BI:
 * Revenue = unit_sold + unit price
 * Profit_margin = profit/Revenue
 
-### Data modelling: 
+### Data Modelling: 
 Table sequence(Using each similar columns in each table to merge to other table)
 Customers (Birthdate) + Exchange rate (Date)+ product (Deliverydate) + sales (Productkey)+ store (Storekey)+ Calender date.
 
-### Powerbi measures
+### Powerbi Measures
 ```(Power BI dax)
 SELECT*
 FROM SALES ,Profit Margin = DIVIDE([Total Profit],[Revenue])
@@ -72,7 +72,7 @@ VAR PER_ = DIVIDE(CY_ - PY_, PY_)
 VAR FORMAT_ = SWITCH(TRUE(),CY_> 0,  "green", CY_ < 0 ,"Red", "Grey")
 RETURN FORMAT_
 ```
-### Power bi dashboard
+### Powerbi Dashboard
 This dashboard include the following visuals 
 - Revenue and profit overtime overtime
 - Profit and Revenue by category
@@ -87,7 +87,7 @@ This dashboard include the following visuals
 <img width="1183" height="673" alt="Screenshot 2025-10-14 175623" src="https://github.com/user-attachments/assets/8f5d00d9-6778-4e10-83b1-909b92af0ccd" />
 
 
-### Key insights
+### Key Insights
 1.Maven Electronics generated $34.6M revenue and $20.25M profit with +2.2% YoY growth, indicating strong profitability and early recovery after the 2020 decline.
 2.Computers, Desktops, and Televisions dominate sales and profit, showing heavy revenue concentration in a few core product categories.
 3.Adventure Works contributes $11.8M revenue, revealing reliance on a single leading brand.
