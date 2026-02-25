@@ -3,15 +3,15 @@ Excel + Power BI Project | Global+ Electronics+ Retailers From raw data to Busin
 
 Table of contents
 
-* [Project Overview](*project-overview)
-* [Tools & Technologies](*tools--technology)
-* [Dataset Overview](*dataset-overview)
-* [Data Cleaning Process](*data-cleaning-process)
-* [Data Modelling](*data-modelling)
-* [Powerbi Measures](*power-measures)
-* [Powerbi Dashboard](*powerbi-dashboard)
-* [Key Insight](*key-insight)
-* [Recommendation](*recommendation)
+* [Project Overview](#project-overview)
+* [Tools & Technologies](#tools--technology)
+* [Dataset Overview](#dataset-overview)
+* [Data Cleaning Process](#data-cleaning-process)
+* [Data Modelling](#data-modelling)
+* [Powerbi Measures](#power-measures)
+* [Powerbi Dashboard](#powerbi-dashboard)
+* [Key Insight](#key-insight)
+* [Recommendation](#recommendation)
 
 ### Project overview
 This project analyze global electronics retail stores data to uncover trends in revenue, Year over Year comparison, product performance customer insights, store and regional performance. 
